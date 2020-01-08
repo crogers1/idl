@@ -394,7 +394,9 @@
       <tp:docstring>Use PV framebuffer.</tp:docstring>
     </property>
     <property name="videoram" type="i" access="readwrite"/>
-    <property name="viridian" type="b" access="readwrite"/>
+    <property name="viridian" type="s" access="readwrite">
+      <tp:docstring>Enter a space separated list of Viridian enlightments, as outlined in the xl configuration documentation.</tp:docstring>
+    </property>
     <property name="virt-type" type="s" access="readwrite"/>
     <property name="vkbd" type="b" access="readwrite">
       <tp:docstring>Use PV keyboard and mouse.</tp:docstring>
@@ -772,7 +774,9 @@
       <tp:docstring>Use PV framebuffer.</tp:docstring>
     </property>
     <property name="videoram" type="i" access="readwrite"/>
-    <property name="viridian" type="b" access="readwrite"/>
+    <property name="viridian" type="s" access="readwrite">
+      <tp:docstring>Enter a space separated list of Viridian enlightments, as outlined in the xl configuration documentation.</tp:docstring>
+    </property>
     <property name="virt-type" type="s" access="readwrite"/>
     <property name="vkbd" type="b" access="readwrite">
       <tp:docstring>Use PV keyboard and mouse.</tp:docstring>
