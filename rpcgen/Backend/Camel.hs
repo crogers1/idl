@@ -148,7 +148,8 @@ handlerStubs object (I.Interface iname methods _ _) =
                   , "\t\t\t\tlet reply = DBus.Message.new_method_return msg in"
                   ]
                     ++ reply_appends (nameSequence (filterOutParams params))
-                    ++ [ "\t\t\t\treply"
+                    ++ [ "\t\t\t\tinfo \"Before reply\";"
+                       , "\t\t\t\treply"
                        , "\t\t\t\t with Match_failure _ -> DBus.Message.new_error msg DBus.ERR_INVALID_SIGNATURE \"invalid arguments\""
                        , "\t\t\t\t    | Failure s -> DBus.Message.new_error msg DBus.ERR_FAILED s"
                        , "\t\t\t\t    | _ -> DBus.Message.new_error msg DBus.ERR_FAILED \"exception occured\")"
